@@ -23,6 +23,16 @@ $ yarn add svgr.macro
 
 _Note: You'll need to install and configure [babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros) if you haven't already. (This can be omitted when using CRA [react-script@2.x](https://github.com/facebookincubator/create-react-app/issues/3815) .)_
 
+## Caveats
+
+### Bundle size impact
+
+The macro solution is not suggested for every use case. If you import the same svg across multiple files, it will inflate the bundle size.
+
+You should separate the `svgr.macro` function to a single file and import components from there. Please check the [example structure](https://github.com/evenchange4/svgr.macro-example/blob/master/src/Icons/index.js).
+
+Related issue: https://github.com/facebook/create-react-app/issues/3856
+
 ## Example
 
 [evenchange4/svgr.macro-example (with react-script@2.x)](https://github.com/evenchange4/svgr.macro-example) [[DEMO](https://svgrmacro.netlify.com/)]
