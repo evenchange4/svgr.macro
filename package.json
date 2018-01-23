@@ -1,7 +1,7 @@
 {
   "name": "svgr.macro",
   "version": "0.1.0",
-  "description": "Use svgr with babel-plugin-macros.",
+  "description": "Run svgr at build-time with babel-plugin-macros.",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
