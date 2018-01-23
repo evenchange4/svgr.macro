@@ -33,7 +33,6 @@ _Note: You'll need to install and configure [babel-plugin-macros](https://github
 
 ```js
 import toReactComponent from 'svgr.macro';
-
 const Logo = toReactComponent('./fixtures/logo.svg');
 
       ↓ ↓ ↓ ↓ ↓ ↓
@@ -47,10 +46,9 @@ const Logo = props => <svg width={116} height={28} viewBox="0 0 116 28" {...prop
 
 ```js
 import toReactComponent from 'svgr.macro';
-
 const { DoneBlack, Autorenew } = toReactComponent(
   './fixtures/material/*.svg',
-  { icon: true },
+  { icon: true, replaceAttrValues: ['#61DAFB=currentColor'] },
 );
 
       ↓ ↓ ↓ ↓ ↓ ↓
@@ -67,6 +65,8 @@ const {
   </svg>
 };
 ```
+
+## [Options](https://github.com/smooth-code/svgr#options)
 
 ## Alternative
 
