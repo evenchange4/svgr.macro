@@ -16,7 +16,7 @@ export type Option = {
 
 export default function optionToCLI({
   svgo = true,
-  prettier = true,
+  prettier = false, // Note: default to true in svgr
   expandProps = true,
   icon = false,
   native = false,
