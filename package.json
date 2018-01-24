@@ -36,6 +36,7 @@
     "ast-pretty-print": "2.0.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "8.2.1",
+    "babel-flow-types": "1.2.3",
     "babel-jest": "22.1.0",
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-tester": "5.0.0",
@@ -103,7 +104,8 @@
       "jest/globals": true
     },
     "rules": {
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "import/no-extraneous-dependencies": 0
     }
   },
   "engines": {

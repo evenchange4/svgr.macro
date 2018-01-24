@@ -4,6 +4,8 @@ import { execSync } from 'child_process';
 import { createMacro } from 'babel-plugin-macros';
 import { parse } from 'babylon';
 import glob from 'glob';
+import type { Babel, BabelPluginPass } from 'babel-flow-types';
+import importReact from './utils/importReact';
 import getArguments from './utils/getArguments';
 import optionToCLI from './utils/optionToCLI';
 // import printAST from 'ast-pretty-print';
@@ -11,14 +13,18 @@ import optionToCLI from './utils/optionToCLI';
 
 function svgrMacro({
   references,
+  state,
   state: { file: { opts: { filename } } },
   babel: { types: t },
 }: {
   references: { default: Array<any> },
-  state: { file: { opts: { filename: string } } },
-  babel: { types: Object },
+  state: BabelPluginPass,
+  babel: Babel,
 }): void {
   const { default: toReactComponent = [] } = references;
+
+  // Node: add react on the top of file if it have not been imported.
+  importReact(state, t);
 
   toReactComponent.forEach(referencePath => {
     const [svgPath, options] = getArguments(referencePath, filename);
@@ -42,7 +48,7 @@ function svgrMacro({
         const arrowFunctionExpression =
           ast.program.body[1].declarations[0].init;
         return t.objectProperty(
-          t.StringLiteral(componentName),
+          t.stringLiteral(componentName),
           arrowFunctionExpression,
         );
       });
