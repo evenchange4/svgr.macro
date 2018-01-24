@@ -1,7 +1,9 @@
 ## Change Log
 
-### upcoming (2018/01/24 13:56 +00:00)
+### v1.0.2 (2018/01/24 14:07 +00:00)
 
+* [d560dda](https://github.com/evenchange4/svgr.macro/commit/d560dda720b513c320e322344be0aec3c7b32277) 1.0.2 (@evenchange4)
+* [#6](https://github.com/evenchange4/svgr.macro/pull/6) fix(react): check if react is already been imported [#1](#6) (@evenchange4)
 * [#5](https://github.com/evenchange4/svgr.macro/pull/5) chore(deps): update dependency eslint-plugin-flowtype to v2.41.1 (#5) (@renovate[bot])
 * [1eead86](https://github.com/evenchange4/svgr.macro/commit/1eead86e7c8339ef1ef4ca88e37af4494d2fb8e1) fix(CI): update snapshot (@evenchange4)
 * [2acbb39](https://github.com/evenchange4/svgr.macro/commit/2acbb395ef6e348f25fa4358619acb78fce11675) fix(CI): add test (@evenchange4)
