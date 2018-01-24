@@ -56,5 +56,30 @@ pluginTester({
         );
       `,
     },
+    'it should only import react once': {
+      error: false,
+      code: `
+        import * as React from 'react';
+        import toReactComponent from '../macro';
+
+        const Logo = toReactComponent('./fixtures/logo.svg');
+      `,
+    },
+    'it should only import react once 2': {
+      error: false,
+      code: `
+        import * as React from 'react';
+        import toReactComponent from '../macro';
+
+        const Logo = toReactComponent('./fixtures/logo.svg');
+        const Icon = toReactComponent('./fixtures/icon.svg');
+      `,
+    },
+    empty: {
+      error: false,
+      code: `
+        import toReactComponent from '../macro';
+      `,
+    },
   },
 });
