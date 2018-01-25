@@ -108,9 +108,6 @@
       "import/no-extraneous-dependencies": 0
     }
   },
-  "engines": {
-    "node": ">=9.0.0"
-  },
   "bugs": {
     "url": "https://github.com/evenchange4/svgr.macro/issues",
     "email": "evenchange4@gmail.com"
