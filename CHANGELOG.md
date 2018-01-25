@@ -1,5 +1,11 @@
 ## Change Log
 
+### v1.0.3 (2018/01/25 05:48 +00:00)
+
+* [6cabbd7](https://github.com/evenchange4/svgr.macro/commit/6cabbd7d343e20831cf9acf018bb4aa6fdff0360) 1.0.3 (@evenchange4)
+* [71f4930](https://github.com/evenchange4/svgr.macro/commit/71f4930bdb0eebbcfb726dbf7c933f16ad1a6c3f) fix(node): remove engines > 9 in package.json (@evenchange4)
+* [e0b59b7](https://github.com/evenchange4/svgr.macro/commit/e0b59b74fe3c7d1fbeb46f0297c4e685c0d28a68) docs(CHANGELOG): release 1.0.2 (@evenchange4)
+
 ### v1.0.2 (2018/01/24 14:07 +00:00)
 
 * [d560dda](https://github.com/evenchange4/svgr.macro/commit/d560dda720b513c320e322344be0aec3c7b32277) 1.0.2 (@evenchange4)
