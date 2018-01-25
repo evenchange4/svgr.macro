@@ -21,10 +21,10 @@
       "github-changes -o evenchange4 -r svgr.macro -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
   },
   "dependencies": {
-    "babel-plugin-macros": "2.0.0",
-    "babylon": "6.18.0",
-    "glob": "7.1.2",
-    "svgr": "1.7.0"
+    "babel-plugin-macros": "^2.0.0",
+    "babylon": "^6.18.0",
+    "glob": "^7.1.2",
+    "svgr": "^1.7.0"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.38",
