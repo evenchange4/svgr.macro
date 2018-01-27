@@ -57,7 +57,11 @@ const Logo = props => <svg width={116} height={28} viewBox="0 0 116 28" {...prop
 import toReactComponent from 'svgr.macro';
 const { DoneBlack, Autorenew } = toReactComponent(
   './fixtures/material/*.svg',
-  { icon: true, replaceAttrValues: ['#61DAFB=currentColor'] },
+  { 
+    icon: true, 
+    replaceAttrValues: ['#61DAFB=currentColor'],
+    svgo: NODE_ENV === 'production',
+  },
 );
 
       ↓ ↓ ↓ ↓ ↓ ↓
