@@ -923,15 +923,12 @@ babel-plugin-syntax-object-rest-spread@^6.13.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
 
-babel-plugin-tester@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-tester/-/babel-plugin-tester-5.0.0.tgz#d3387860311cbd8353746d3a8aaba7ad2446e470"
+babel-plugin-tester@7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-tester/-/babel-plugin-tester-7.0.2.tgz#cc7f8517de28c407f6ad6fe7ca63bbf590ac819d"
   dependencies:
-    common-tags "^1.4.0"
-    invariant "^2.2.2"
-    lodash.merge "^4.6.0"
-    path-exists "^3.0.0"
-    strip-indent "^2.0.0"
+    lodash.mergewith "^4.6.0"
+    strip-indent "^3.0.0"
 
 babel-preset-jest@^22.1.0:
   version "22.1.0"
@@ -1288,12 +1285,6 @@ combined-stream@~0.0.4:
 commander@^2.11.0, commander@^2.13.0, commander@^2.8.1, commander@^2.9.0:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
-
-common-tags@^1.4.0:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.7.2.tgz#24d9768c63d253a56ecff93845b44b4df1d52771"
-  dependencies:
-    babel-runtime "^6.26.0"
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -3281,9 +3272,9 @@ lodash.cond@^4.3.0:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/lodash.cond/-/lodash.cond-4.5.2.tgz#f471a1da486be60f6ab955d17115523dd1d255d5"
 
-lodash.merge@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
+lodash.mergewith@^4.6.0:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
@@ -3400,6 +3391,10 @@ mime@~1.2.2, mime@~1.2.9:
 mimic-fn@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.1.0.tgz#e667783d92e89dbd342818b5230b9d62a672ad18"
+
+min-indent@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/min-indent/-/min-indent-1.0.0.tgz#cfc45c37e9ec0d8f0a0ec3dd4ef7f7c3abe39256"
 
 minimatch@3.0.3:
   version "3.0.3"
@@ -4526,6 +4521,12 @@ strip-eof@^1.0.0:
 strip-indent@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-2.0.0.tgz#5ef8db295d01e6ed6cbf7aab96998d7822527b68"
+
+strip-indent@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-3.0.0.tgz#c32e1cee940b6b3432c771bc2c54bcce73cd3001"
+  dependencies:
+    min-indent "^1.0.0"
 
 strip-json-comments@~2.0.1:
   version "2.0.1"
