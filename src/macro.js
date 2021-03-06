@@ -33,7 +33,7 @@ function svgrMacro({
 
     if (isFileExists) {
       // Case 1: single file
-      const jsCode = execSync(`svgr ${svgPath} ${cliArguments}`).toString();
+      const jsCode = execSync(`svgr "${svgPath}" ${cliArguments}`).toString();
       const ast = parse(jsCode, { sourceType: 'module', plugins: ['jsx'] });
       const arrowFunctionExpression = ast.program.body[1].declarations[0].init;
 
@@ -42,7 +42,7 @@ function svgrMacro({
       // Case 2: glob pattern
       const objectProperties = glob.sync(svgPath).map(f => {
         // TODO: merge multiple files and run svgr at same time.
-        const jsCode = execSync(`svgr ${f} ${cliArguments}`).toString();
+        const jsCode = execSync(`svgr "${f}" ${cliArguments}`).toString();
         const ast = parse(jsCode, { sourceType: 'module', plugins: ['jsx'] });
         const componentName = ast.program.body[1].declarations[0].id.name;
         const arrowFunctionExpression =
